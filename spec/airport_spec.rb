@@ -15,6 +15,7 @@ describe Airport do
   before(:example) do
     @airport = Airport.new
     @plane = double :plane
+    let(:plane) {double :plane}
     allow(@plane).to receive(:land)
     allow(@plane).to receive(:take_off)
   end
